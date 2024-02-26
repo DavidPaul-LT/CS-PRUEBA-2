@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".myapp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="3 en raya"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".Modo_Intermedio"
+            android:exported="false" />
+        <activity
+            android:name=".Pantalla3_en_raya_dificil"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaOpciones"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false" />
+        <activity
+            android:name=".Pantalla3"
+            android:exported="false" />
+        <activity
+            android:name=".pantalla_seleccion_modo"
+            android:exported="false" />
+        <activity
+            android:name=".Pantalla2"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaTresEnRaya"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
